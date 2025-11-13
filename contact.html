@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Syyed Sultan</title>
+     <style>
+        /* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0b0b0b;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background-color: #121212;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+header h1 span {
+  color: #f5b400;
+}
+
+header p {
+  color: #ccc;
+  margin-top: 10px;
+  font-size: 1rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 60px 80px;
+  flex-wrap: wrap;
+}
+
+/* ===== Contact Info ===== */
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  background: #141414;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(245, 180, 0, 0.2);
+}
+
+.contact-info h2 {
+  color: #f5b400;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.contact-info strong {
+  color: #f5b400;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #f5b400;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+/* ===== Contact Form ===== */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: #141414;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(245, 180, 0, 0.2);
+}
+
+.contact-form h2 {
+  color: #f5b400;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #0b0b0b;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f5b400;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #f5b400;
+  border: none;
+  color: #000;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #ffcb33;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #121212;
+  color: #888;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+}
+
+     </style>
+</head>
+<body>
+
+    <!-- ===== Header ===== -->
+    <header>
+        <h1>Contact <span>Me</span></h1>
+        <p>Let’s connect! Whether you have a project, a question, or just want to say hello — feel free to reach out.</p>
+    </header>
+
+    <!-- ===== Contact Section ===== -->
+    <section class="contact-section">
+
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Email:</strong>mohdxaidi017@gmail.com</p>
+            <p><strong>Phone:</strong> +91 991 747 2560</p>
+            <p><strong>Address:</strong> Manglour,Haridwar,Uttarkhand</p>
+            <p><strong>Working Hours:</strong> Mon - Sat: 9AM - 6PM</p>
+            <p><strong>Follow Me:</strong></p>
+            <div class="social-links">
+                <a href="#">🌐</a>
+                <a href="#">📷</a>
+                <a href="#">💼</a>
+                <a href="#">🐦</a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>© 2025 Syyed Sultan | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

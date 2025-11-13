@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Syyed Sultan</title>
+  <link rel="icon" href="img/favicon.png">
+  <style>
+    /* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0b0b0b;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #0b0b0b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f5b400;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f5b400;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px 80px;
+  background: linear-gradient(180deg, #0b0b0b 60%, #121212);
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text p {
+  color: #f5b400;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-top: 10px;
+}
+
+.hero-text h1 span {
+  color: #f5b400;
+}
+
+.hero-text h2 {
+  font-weight: 400;
+  margin: 15px 0 30px;
+  color: #aaa;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  background-color: #f5b400;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffc933;
+}
+
+.btn-outline {
+  border: 2px solid #f5b400;
+  color: #f5b400;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #f5b400;
+  color: #000;
+}
+
+.hero-img img {
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(245, 180, 0, 0.3);
+}
+
+/* ===== About Section ===== */
+.about {
+  padding: 80px 60px;
+  background-color: #121212;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #f5b400;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-content img {
+  width: 220px;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-text ul {
+  list-style: none;
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+.about-text li strong {
+  color: #f5b400;
+}
+
+.projects {
+  color: #f5b400;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* ===== Skills Section ===== */
+.skills {
+  padding: 80px 60px;
+  background-color: #0b0b0b;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  color: #f5b400;
+  margin-bottom: 40px;
+}
+
+.skills-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.skill {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.bar {
+  background: #222;
+  border-radius: 8px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 10px;
+  background: #f5b400;
+  border-radius: 8px 0 0 8px;
+  transition: width 1s ease-in-out;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #121212;
+  text-align: center;
+  padding: 25px;
+  color: #888;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 30px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="logo">Syyed Sultan</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">My Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-text">
+      <p>HELLO!</p>
+      <h1>I'm <span>Syyed</span> Sultan</h1>
+      <h2>Fullstack Web Developer</h2>
+      <div class="hero-buttons">
+        <a href="#" class="btn">Hire Me</a>
+        <a href="#" class="btn-outline">Download CV</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="C:\Users\Admin\Downloads\xaidi.jpeg" alt="Profile Photo">
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="C:\Users\Admin\Downloads\xaidi.jpeg" alt="Profile">
+      <div class="about-text">
+        <p>I’m a passionate full-stack developer with a love for clean design and efficient code. I build scalable and modern web applications.</p>
+        <ul>
+          <li><strong>Name:</strong> Syyed Sultan</li>
+          <li><strong>Date of Birth:</strong> June 04, 2007</li>
+          <li><strong>Address:</strong> Manglour, Haridwar, Uttarkhand</li>
+          <li><strong>Email:</strong> mohdxaidi017@gmail.com</li>
+          <li><strong>Phone:</strong> +91 99 174 725 60</li>
+        </ul>
+        <p class="projects">99 Projects Completed</p>
+        <div class="about-buttons">
+          <a href="contact.html" class="btn">Contact Me</a>
+          <a href="#" class="btn-outline">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+      <div class="skill"><span>PHP</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+      <div class="skill"><span>jQuery</span><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+      <div class="skill"><span>HTML5</span><div class="bar"><div class="fill" style="width:95%"></div></div></div>
+      <div class="skill"><span>CSS3</span><div class="bar"><div class="fill" style="width:88%"></div></div></div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Syyed Sultan | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
